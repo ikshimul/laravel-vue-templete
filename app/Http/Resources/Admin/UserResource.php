@@ -21,7 +21,7 @@ class UserResource extends JsonResource
             'email'         => $this->email,
             'photo'         => $this->profile_photo_url ?? 0,
             'status'        => $this->is_active,
-            'created_at'    => date_format($this->created_at, 'Y-m-d h:i A') ?? null,
+            'created_at'    => $this->created_at ? date_format($this->created_at, 'Y-m-d h:i A') : null,
         ];
     }
 }

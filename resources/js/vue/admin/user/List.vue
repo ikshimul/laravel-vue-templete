@@ -263,11 +263,11 @@
             type="checkbox"
             class="form-check-input"
             id="is_status"
-            @change="toggleStatus"
+            @change="toggleStatusAddUser"
             :checked="addUser.status == 1"
           />
           <label class="form-check-label" for="is_status">
-            {{ editedUser.status === 1 ? "Active" : "Inactive" }}
+            {{ addUser.status === 1 ? "Active" : "Inactive" }}
           </label>
         </div>
       </div>
@@ -534,6 +534,9 @@ export default {
     toggleStatus(event) {
       this.editedUser.status = event.target.checked ? 1 : 0;
     },
+    toggleStatusAddUser(event){
+      this.addUser.status = event.target.checked ? 1 : 0;
+    }
   },
   computed: {
     modalTitle() {

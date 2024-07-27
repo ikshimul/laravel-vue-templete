@@ -23,17 +23,7 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="ri-mail-send-line"></i>
-                        <span>Reports</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="#">Annual and Audited</a></li>
-                        <li><a href="#">Quarterly Accounts</a></li>
-                    </ul>
-                </li>                
-                <li class="menu-title">Pages</li>
+                <li class="menu-title">Admin</li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-account-circle-line"></i>
@@ -42,26 +32,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{ route('users') }}">Admins</a></li>
                     </ul>
-                </li>
-                <li class="menu-title">About</li>
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="ri-pencil-ruler-2-line"></i>
-                        <span>Company</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="#">Profile</a></li>            
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="ri-pencil-ruler-2-line"></i>
-                        <span>Directors</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="#">Profile</a></li>            
-                    </ul>
-                </li>
+                </li>                
             </ul>
         </div>
         <!-- Sidebar -->
